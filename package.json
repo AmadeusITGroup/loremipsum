@@ -1,0 +1,23 @@
+{
+  "name": "sample-landing-page-sandbox",
+  "private": true,
+  "version": "0.0.0",
+  "license": "Apache-2.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "test": "node scripts/validate-content.mjs",
+    "validate": "npm test && npm run build && npm audit --audit-level=high",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "typescript": "~6.0.2",
+    "vite": "^8.3.0"
+  },
+  "dependencies": {
+    "@design-factory/tokens": "^22.0.1",
+    "dompurify": "^3.4.15",
+    "marked": "^18.0.12"
+  }
+}
